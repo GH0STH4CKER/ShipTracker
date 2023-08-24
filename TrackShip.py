@@ -6,7 +6,7 @@ session.headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Apple
 
 ship = input("Ship Name/IMO : ")
 
-url = r"https://services-etac.sinay.ai/api/vessels?search={ship}"
+url = "https://services-etac.sinay.ai/api/vessels?search="+ship
 
 resp = session.get(url)
 
